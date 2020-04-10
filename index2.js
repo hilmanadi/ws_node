@@ -66,8 +66,6 @@ app.post("/",(req,res,next)=>{
 						}
 					});
 				}else{
-
-					//STAR END BESAR
 					var p1 = new Promise(function(resolve,reject){
 						x.query(testingbro.execsp,testingbro.dt,(errx,resss)=>{
 							let response = {};
@@ -149,69 +147,10 @@ app.post("/",(req,res,next)=>{
 									    });
 									}
 								});
-
-
-
-								
 							}
-							// var p2 = new Promise(function(resolvee,rejectt){
-								
-							// });
-
 						}
 					});
-
-
-
-
-
-					// 		var xeww = [];
-					// 		//START FOR
-					// 		for(let i=0;i<testingbro.test.length;i++){
-					// 			xeww.push(i);
-					// 			let sp = testingbro.test[i].spname;
-					// 			let sql1 = 'select * from information_schema.parameters where specific_name ="'+sp+'"';
-					// 			let execquery = x.query(sql1,(erry,ress)=>{
-					// 				if(err) {
-					// 					res.status(404).json({"status":400,'error':erry});
-					// 					next(erry);
-
-					// 				}else{
-					// 					var testingbro1 = routeModule.cekthis(sp,testingbro.test[i],JSON.stringify(ress));
-					// 					let execquery11 = x.query(testingbro1.execsp,testingbro1.dt,(errx,resss)=>{
-					// 						if(errx){
-					// 							 console.log(errx);
-					// 							 arrremove(xeww,i)
-					// 							 next(errx);
-					// 						}else{
-					// 							var arrtesting = [];
-									
-					// 							if(Array.isArray(resss)===false){
-					// 								arrtesting.push(JSON.parse(JSON.stringify(resss)));
-					// 								if(arrtesting[0].affectedRows==1){
-					// 									console.log(arrtesting[0]);
-					// 								}else{
-					// 									console.log(arrtesting[0]);
-					// 								}	
-					// 							}else{
-					// 								if(resss[0].length==0){
-					// 									console.log('nodata');
-					// 								}else{
-					// 									console.log('ada data');
-					// 								}	
-					// 							}
-					// 						}
-					// 					})
-					// 				}
-					// 			})
-					// 		}
-					// 		//END FOR
-					// 		console.log(xeww);							
-					// 	}
-					// 	//END ELSE KECIL
-					// });
 				}
-				//END ELSE BESAR
 			}	
 		})
 });

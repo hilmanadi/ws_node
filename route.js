@@ -27,7 +27,6 @@ module.exports = {
    		var arrk = Object.keys(msg);
 		var arrv = Object.values(msg);
 
-		
 		var newarray = [];
 
 		for (var i = 0; i < arrk.length; i++) {
