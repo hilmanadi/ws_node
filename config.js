@@ -8,7 +8,8 @@ module.exports = {
 				host:'localhost',
 				user:'root',
 				password:'',
-				database:'digital'
+				database:'digital',
+				multipleStatements:true
 		});
 
 		conn.connect((err)=>{

@@ -1,9 +1,6 @@
 var express = require("express");
 var arrcheck = [];
 
-// var mysql = require("mysql");
-
-
 module.exports = {
    cekthis:function(spp,msg,info){
 

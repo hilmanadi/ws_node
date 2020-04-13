@@ -98,7 +98,6 @@ app.post("/",(req,res,next)=>{
 						 	res.send(resolve);
 							return
 						}else{
-							arrrsv.push(resolve);
 							for(let i=0;i<testingbro.test.length;i++){
 								let sp = testingbro.test[i].spname;
 								let sq1 = 'select * from information_schema.parameters where specific_name ="'+sp+'"';
